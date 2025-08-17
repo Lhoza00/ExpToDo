@@ -47,7 +47,7 @@ class SpecialFooter extends HTMLElement {
         <footer>
             <div class="container">
                 <div class="topfooter">
-                    <a href="index.html" class="Logo">ExpToDO</a> 
+                    <a href="index.html" class="Logo">ExpToDo</a> 
                     <div class="socials">
                         <i href="#" class="fab fa-facebook-f"></i>
                         <i class="fab fa-youtube"></i>
@@ -58,7 +58,7 @@ class SpecialFooter extends HTMLElement {
                 <hr/>
                 <div class="footlinks">
                     <div id="copyright">
-                        <p>&copy 2025 Linkspam</p>
+                        <p>&copy 2025 ExpToDo</p>
                     </div>
                     <div id="T_C">
                         <a href="About.htl">About</a>
@@ -75,3 +75,4 @@ customElements.define(`special-head`, SpecialHead)
 customElements.define(`special-header`, SpecialHeader)
 
 customElements.define(`special-footer`, SpecialFooter)
+
