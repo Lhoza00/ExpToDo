@@ -1,0 +1,318 @@
+@import url('global.css');
+.hero{
+    min-height: 100%;
+}
+.hero .container{
+    display: flex;
+    height: 100%;
+}
+#heroCard{
+    background-color: #d3cfcf;
+    border: 1px solid black;
+    border-radius: 9px;
+    margin: auto;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+    gap: 2rem;
+}
+#heroCard a{
+    display: flex;
+    width: 100%;
+}
+.linkPage{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 9px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    transition: .2s ease;
+    cursor: pointer;
+    background-color: #fff;
+}
+.linkPage:hover{
+    background-color: var(--Main)!important;
+    color: white;
+}
+/*Profile*/
+.levelContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.levelContainer span{
+    font-size: 1.2rem;
+}
+.levelContainer span b{
+    font-size: 1.3rem;
+}
+.profileButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+.profileButtons a{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profileButtons a button{
+    width: 100%;
+    height: 7dvh;
+    font-size: 1.2rem;
+    border-radius: 9px;
+    border: 1px solid black;
+    background-color: var(--Secondary);
+    transition: .3s ease;
+}
+.profileButtons button:hover{
+    scale: 1.08;
+    background-color: var(--Tertiary);
+}
+.statsContainer li span{
+    display: flex;
+    justify-content: center;
+    margin: 0.2rem 0;
+}
+.statsContainer li a{
+    color: blue;
+}
+/*Login*/
+.SectionCard{
+    min-height: 100%;
+}
+.SectionCard .container{
+    display: flex;
+    height: 100%;
+}
+.LoginHeader{
+    font-size: 2rem;
+}
+#card{
+    background-color: #d3cfcf;
+    border: 1px solid black;
+    border-radius: 9px;
+    margin: auto;
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+}
+#Card form input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+}
+.forgot{
+    color: blue;
+}
+#Card form button{
+    margin: 0.5rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+#Card form button:hover{
+    font-size: 1.6rem;
+}
+.password{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#createAccount{
+    margin: 0.5rem 0;
+    text-align: center;
+}
+#createAccount a{
+    color: blue;
+}
+/*Guest*/
+.toDoSection {
+    min-height: 100%;
+}
+
+.toDoSection .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#toDoForm {
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    padding: 0.5rem 0;
+}
+
+#toDoForm input {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 4px;
+    caret-color: var(--Main);
+}
+
+#toDoForm button {
+    padding: 0.5rem 0.2rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.toDoList {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.toDoList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 0.8rem auto;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: var(--Tertiary);
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.toDoList li.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toDoList li p {
+    flex-grow: 1;
+    padding: 0 1rem;
+}
+
+.toDoList .todo button {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 9px;
+    background-color: var(--Secondary);
+}
+
+.fas.fa-trash-alt {
+    margin-left: 1rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.fas.fa-trash-alt:hover {
+    color: red;
+}
+
+.todo {
+    transition: all 0.3s ease;
+}
+
+.completed-todo {
+    transform: scale(0.95);
+    filter: grayscale(100%) blur(1px);
+    opacity: 0.7;
+    background-color: #f0f0f0;
+}
+
+/*Bubble Career*/
+
+.careerSection .container {
+    min-height: 100dvh;
+    max-width: 100dvw;
+    padding: 20px;
+    
+    box-shadow: 0 4px 15px rgba(58, 155, 220, 0.4);
+
+    background: linear-gradient(
+      135deg,
+      #2a3a72 0%,       /* deep navy blue */
+      #5360a6 30%,      /* muted royal blue */
+      #7b78b8 55%,      /* soft purple-lavender */
+      var(--Primary) 70%, /* bright white */
+      #9a8fc1 85%,      /* pale purple */
+      var(--Secondary) 100% /* light cream */
+    );
+}
+
+.bubbleWrap h1{
+    font-size: 2rem;
+   
+}
+.bubbleWrap ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+     margin-bottom: 1rem;
+}
+.bubbleWrap ul li{
+    background-color: var(--Tertiary);
+    border: 2px solid black;
+    border-radius: 9px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+
+}
+.bubbleWrap ul li:hover{
+    background-color: var(--Tertiary);
+}
+
+
+@media (min-width: 340px) {
+   
+} 
+@media (min-width: 475px) {
+     #heroCard, #Card{
+        width: 60%;
+     }
+}
+@media (min-width: 648px) {
+    
+}
+@media (min-width: 768px) {
+    #Card{
+        width: 45%;
+    }
+    #toDoForm, .toDoList li{
+        width: 70dvw;
+    }
+    #toDoForm button{
+        width: 10dvw;
+    }
+    .bubbleWrap h1{
+    font-size: 3rem;
+    }
+    .bubbleWrap ul li{
+        font-size: 1.8rem;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .toDoList {  
+        padding: 0 5rem;
+    } 
+}
+@media (min-width: 1280px) {
+    
+}
+@media (min-width: 1536px) {
+    
+}
