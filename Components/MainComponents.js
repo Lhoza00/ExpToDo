@@ -9,7 +9,7 @@ class SpecialHeader extends HTMLElement {
         `
         <header class="header">
             <div class="container">
-                <a href="Index.html" class="Logo">Linkspam</a> 
+                <a href="index.html" class="Logo">ExpToDO</a> 
                 <nav class="navbar">
                     <a href="Profile.html">Profile</a>
                 </nav> 
@@ -47,7 +47,7 @@ class SpecialFooter extends HTMLElement {
         <footer>
             <div class="container">
                 <div class="topfooter">
-                    <a href="Home.php" class="Logo">Linkspam</a> 
+                    <a href="index.html" class="Logo">ExpToDO</a> 
                     <div class="socials">
                         <i href="#" class="fab fa-facebook-f"></i>
                         <i class="fab fa-youtube"></i>
@@ -73,4 +73,5 @@ class SpecialFooter extends HTMLElement {
 }
 customElements.define(`special-head`, SpecialHead)
 customElements.define(`special-header`, SpecialHeader)
+
 customElements.define(`special-footer`, SpecialFooter)
